@@ -9,7 +9,8 @@ extension="${filename##*.}"
 filename="${filename%.*}"
 #echo $filename
 #ffmpeg -i $i -ss 16 -vn -c:a copy $filename.m4a
-#-vcodec copy -acodec copyffmpeg -i $i -ss 16 -vcodec copy -acodec copy $filename\_.mp4
+#-vcodec copy -acodec copy
+ffmpeg -i $i -ss 16 -vcodec copy -acodec copy fertig$filename.mp4
 done
 
 IFS=$SAVEIFS
