@@ -13,4 +13,5 @@ filename="${filename%.*}"
 ffmpeg -i $i -ss 16 -vcodec copy -acodec copy fertig$filename.mp4
 done
 
+
 IFS=$SAVEIFS
